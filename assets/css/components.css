@@ -16,7 +16,7 @@
   border-radius: 10px;
   padding: 9px 12px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 560;
   border: 1px solid transparent;
   transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
 }
@@ -50,7 +50,7 @@
   border: 1px solid transparent;
   border-radius: 14px;
   padding: 13px 20px;
-  font-weight: 700;
+  font-weight: 650;
   letter-spacing: 0.01em;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), filter var(--transition-fast);
 }
@@ -94,14 +94,15 @@
   background: rgba(12, 20, 36, 0.9);
   color: #d9e7ff;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 560;
   margin-bottom: 18px;
 }
 
 .hero-title {
   font-size: clamp(42px, 7vw, 78px);
-  letter-spacing: -0.045em;
-  line-height: 0.98;
+  letter-spacing: -0.048em;
+  line-height: 0.96;
+  font-weight: 800;
 }
 
 .gradient-text {
@@ -114,8 +115,9 @@
 .hero-desc {
   margin-top: 22px;
   color: var(--text-soft);
-  font-size: clamp(17px, 2.2vw, 24px);
-  line-height: 1.62;
+  font-size: clamp(18px, 2.2vw, 25px);
+  line-height: 1.64;
+  font-weight: 470;
   max-width: 62ch;
 }
 
@@ -143,7 +145,7 @@
 
 .metric-value {
   font-size: clamp(24px, 4vw, 34px);
-  font-weight: 800;
+  font-weight: 780;
   letter-spacing: -0.03em;
 }
 
@@ -151,6 +153,7 @@
   margin-top: 4px;
   color: var(--text-muted);
   font-size: 13px;
+  font-weight: 520;
 }
 
 .side-status {
@@ -159,7 +162,7 @@
   background: rgba(15, 35, 36, 0.52);
   padding: 11px 12px;
   color: #9ef8dc;
-  font-weight: 700;
+  font-weight: 650;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -188,6 +191,7 @@
   padding: 12px;
   color: #d9e7ff;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .side-list-item b {
@@ -233,8 +237,10 @@
 .feature-card h3,
 .review-card h3,
 .step-card h3 {
-  font-size: 24px;
-  letter-spacing: -0.02em;
+  font-size: clamp(24px, 2.3vw, 31px);
+  letter-spacing: -0.03em;
+  line-height: 1.14;
+  font-weight: 760;
 }
 
 .benefit-card p,
@@ -243,7 +249,8 @@
 .step-card p {
   margin-top: 12px;
   color: var(--text-soft);
-  line-height: 1.66;
+  line-height: 1.72;
+  font-size: 16px;
 }
 
 .feature-checks {
@@ -258,6 +265,7 @@
   gap: 8px;
   color: #d8e8ff;
   font-size: 14px;
+  font-weight: 540;
 }
 
 .feature-checks span::before {
@@ -283,7 +291,7 @@
   border: 2px solid rgba(53, 214, 167, 0.48);
   display: grid;
   place-items: center;
-  font-weight: 800;
+  font-weight: 780;
   color: #7df4d5;
   margin-bottom: 14px;
 }
@@ -306,9 +314,10 @@
 
 .compare-table th {
   color: var(--text-muted);
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.09em;
+  font-weight: 650;
 }
 
 .compare-table tr:last-child td {
@@ -346,8 +355,8 @@
   justify-content: space-between;
   gap: 12px;
   padding: 18px 20px;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 670;
   text-align: left;
 }
 
@@ -366,13 +375,15 @@
 .faq-content {
   padding: 0 20px 18px;
   color: var(--text-soft);
-  line-height: 1.7;
+  line-height: 1.76;
+  font-size: 16px;
 }
 
 .review-meta {
   margin-top: 14px;
   color: var(--text-muted);
   font-size: 14px;
+  font-weight: 520;
 }
 
 .cta-panel {
@@ -389,13 +400,17 @@
 
 .cta-panel h3 {
   font-size: clamp(34px, 4.5vw, 56px);
-  line-height: 1.02;
+  line-height: 1.01;
+  letter-spacing: -0.04em;
+  font-weight: 800;
 }
 
 .cta-panel p {
   margin-top: 14px;
   color: var(--text-soft);
   max-width: 50ch;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .toast-wrap {

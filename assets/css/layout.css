@@ -56,14 +56,16 @@
 }
 
 .brand-text h1 {
-  font-size: 31px;
-  letter-spacing: -0.03em;
+  font-size: 33px;
+  letter-spacing: -0.04em;
+  font-weight: 800;
 }
 
 .brand-subtitle {
   margin-top: 2px;
   color: var(--text-muted);
   font-size: 14px;
+  font-weight: 500;
 }
 
 .beta-pill {
@@ -127,15 +129,17 @@
 
 .section-title {
   font-size: clamp(34px, 5vw, 56px);
-  line-height: 1.06;
-  letter-spacing: -0.035em;
+  line-height: 1.03;
+  letter-spacing: -0.042em;
+  font-weight: 800;
 }
 
 .section-description {
   margin-top: 16px;
   color: var(--text-soft);
-  font-size: clamp(16px, 2vw, 21px);
-  line-height: 1.6;
+  font-size: clamp(17px, 2vw, 22px);
+  line-height: 1.68;
+  font-weight: 470;
 }
 
 .benefits-grid {
