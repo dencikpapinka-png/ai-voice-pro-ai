@@ -109,8 +109,10 @@
 }
 
 .section-header {
-  max-width: 760px;
+  max-width: 860px;
+  margin-inline: auto;
   margin-bottom: var(--space-5);
+  text-align: center;
 }
 
 .section-overline {
@@ -132,7 +134,8 @@
   line-height: 1.08;
   letter-spacing: -0.028em;
   font-weight: 700;
-  max-width: 18ch;
+  max-width: 19ch;
+  margin-inline: auto;
 }
 
 .section-description {
@@ -142,6 +145,7 @@
   line-height: 1.72;
   font-weight: 440;
   max-width: 60ch;
+  margin-inline: auto;
 }
 
 .benefits-grid {
