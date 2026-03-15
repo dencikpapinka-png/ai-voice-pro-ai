@@ -58,6 +58,13 @@
 
   .hero-title {
     font-size: clamp(34px, 12vw, 54px);
+    max-width: none;
+    line-height: 1.02;
+  }
+
+  .hero-line {
+    white-space: normal;
+    text-wrap: balance;
   }
 
   .hero-metrics {
