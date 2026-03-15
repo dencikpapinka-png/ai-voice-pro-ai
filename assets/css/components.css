@@ -436,6 +436,15 @@
   font-size: 15px;
 }
 
+.faq-spec-list {
+  margin: 8px 0 14px;
+  padding-left: 18px;
+}
+
+.faq-spec-list li + li {
+  margin-top: 6px;
+}
+
 .review-meta {
   margin-top: 14px;
   color: var(--text-muted);
