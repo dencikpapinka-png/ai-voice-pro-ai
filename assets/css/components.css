@@ -332,18 +332,22 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  white-space: normal;
 }
 
 .mark-good,
 .mark-bad {
-  display: inline-grid;
-  place-items: center;
+  display: inline-block;
   width: 22px;
   height: 22px;
+  text-align: center;
+  vertical-align: middle;
   border-radius: 999px;
   font-size: 13px;
   font-weight: 800;
-  line-height: 1;
+  line-height: 20px;
+  margin-right: 8px;
+  flex: 0 0 auto;
 }
 
 .mark-good {
@@ -366,6 +370,14 @@
 .bad {
   color: #ff9ab2;
   font-weight: 700;
+}
+
+/* Fallback for older browsers with partial flex-gap support */
+@supports not (gap: 10px) {
+  .compare-value .mark-good,
+  .compare-value .mark-bad {
+    margin-right: 10px;
+  }
 }
 
 .faq-item {
