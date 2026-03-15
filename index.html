@@ -96,6 +96,38 @@
             "@type": "Answer",
             "text": "В приложении встроена проверка обновлений. Новые версии загружаются через официальный релизный канал GitHub Releases."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Как настроить голосовой ввод на Windows?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Выберите микрофон в настройках, назначьте удобный хоткей, проверьте вставку текста в рабочем приложении и включите нужные правила обработки текста."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как работает транскрибация аудио и видео?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В разделе транскрибации используется очередь файлов с последовательной обработкой, просмотром результата и экспортом в TXT или SRT."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что выбрать: локальный режим или API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Локальный режим подходит для приватности и контроля, API-режим — для усиленной языковой правки. Выбор зависит от приоритета скорости, качества и бюджета."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Куда обратиться за поддержкой?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "По вопросам настройки и работы Voice PRO AI можно написать в Telegram: @Dima_Kanev."
+          }
         }
       ]
     }
@@ -362,45 +394,6 @@
       </div>
     </section>
 
-    <section class="section" id="resources" aria-labelledby="resources-title">
-      <div class="section-header reveal">
-        <span class="section-overline">Материалы</span>
-        <h2 class="section-title" id="resources-title">Полезные страницы по распознаванию речи</h2>
-        <p class="section-description">Подготовили отдельные страницы под ключевые запросы, чтобы было легче разобраться в сценариях использования Voice PRO AI.</p>
-      </div>
-
-      <div class="resources-grid">
-        <article class="resource-card reveal">
-          <h3><a href="./guides/voice-input-windows.html">Голосовой ввод текста на Windows</a></h3>
-          <p>Как настроить стабильный голосовой ввод в рабочих приложениях и ускорить повседневный набор текста.</p>
-        </article>
-        <article class="resource-card reveal">
-          <h3><a href="./guides/transkribaciya-audio-video.html">Транскрибация аудио и видео</a></h3>
-          <p>Пакетная обработка файлов, экспорт TXT/SRT и оптимальный поток работы с длинными записями.</p>
-        </article>
-        <article class="resource-card reveal">
-          <h3><a href="./guides/lokalnoe-raspoznavanie-rechi.html">Локальное распознавание речи</a></h3>
-          <p>Плюсы локального режима: приватность, контроль затрат и работа без постоянной зависимости от сети.</p>
-        </article>
-        <article class="resource-card reveal">
-          <h3><a href="./guides/goryachie-klavishi-diktovka.html">Горячие клавиши для диктовки</a></h3>
-          <p>Практические рекомендации по хоткеям, чтобы диктовать быстро и комфортно в любой программе.</p>
-        </article>
-        <article class="resource-card reveal">
-          <h3><a href="./guides/sravnenie-lokalno-i-api.html">Локально или API: что выбрать</a></h3>
-          <p>Сравнение по скорости, качеству, стоимости и стабильности для разных рабочих сценариев.</p>
-        </article>
-        <article class="resource-card reveal">
-          <h3><a href="./vozmozhnosti.html">Возможности Voice PRO AI</a></h3>
-          <p>Отдельная страница с детальным обзором модулей продукта и рекомендованными сценариями использования.</p>
-        </article>
-        <article class="resource-card reveal">
-          <h3><a href="./podderzhka.html">Контакты и поддержка</a></h3>
-          <p>Каналы связи, FAQ по внедрению и быстрые способы получить помощь по настройке приложения.</p>
-        </article>
-      </div>
-    </section>
-
     <section class="section" id="faq" aria-labelledby="faq-title">
       <div class="section-header reveal">
         <span class="section-overline">FAQ</span>
@@ -445,6 +438,42 @@
           </button>
           <div class="faq-content" id="faq-4" hidden>
             В приложении встроена проверка обновлений. Новые версии загружаются через официальный релизный канал GitHub Releases.
+          </div>
+        </article>
+        <article class="faq-item" role="listitem">
+          <button class="faq-button" type="button" data-faq-button aria-expanded="false" aria-controls="faq-5">
+            Как правильно настроить голосовой ввод на Windows?
+            <span class="faq-icon">⌄</span>
+          </button>
+          <div class="faq-content" id="faq-5" hidden>
+            Рекомендуемая последовательность: выберите микрофон, назначьте хоткей, проверьте вставку в нужном приложении и включите необходимые правила обработки текста.
+          </div>
+        </article>
+        <article class="faq-item" role="listitem">
+          <button class="faq-button" type="button" data-faq-button aria-expanded="false" aria-controls="faq-6">
+            Как работает транскрибация аудио и видео файлов?
+            <span class="faq-icon">⌄</span>
+          </button>
+          <div class="faq-content" id="faq-6" hidden>
+            В разделе «Транскрибация аудио и видео» доступна очередь: добавляете файлы, запускаете обработку и получаете результат с экспортом в TXT/SRT.
+          </div>
+        </article>
+        <article class="faq-item" role="listitem">
+          <button class="faq-button" type="button" data-faq-button aria-expanded="false" aria-controls="faq-7">
+            Что выбрать для работы: локальный режим или API?
+            <span class="faq-icon">⌄</span>
+          </button>
+          <div class="faq-content" id="faq-7" hidden>
+            Локально — для приватности и контроля затрат. API — для усиленной языковой правки и более интеллектуальной постобработки. Можно переключаться под текущую задачу.
+          </div>
+        </article>
+        <article class="faq-item" role="listitem">
+          <button class="faq-button" type="button" data-faq-button aria-expanded="false" aria-controls="faq-8">
+            Где получить помощь по установке и настройке?
+            <span class="faq-icon">⌄</span>
+          </button>
+          <div class="faq-content" id="faq-8" hidden>
+            Напишите в Telegram поддержки: <a href="https://t.me/Dima_Kanev" target="_blank" rel="noopener noreferrer">@Dima_Kanev</a>. Рекомендуем сразу указать версию приложения и краткое описание ситуации.
           </div>
         </article>
       </div>
