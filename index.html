@@ -1,0 +1,303 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Voice PRO AI — Премиальная диктовка для Windows</title>
+  <meta name="description" content="Voice PRO AI — премиальный сервис голосовой диктовки и транскрибации. Быстро, точно, профессионально." />
+  <style>
+    :root{
+      --bg:#060a14;
+      --surface:#0b1222cc;
+      --surface-strong:#0c1529;
+      --text:#eef4ff;
+      --muted:#9db0d4;
+      --line:#23365d;
+      --primary:#2f78ff;
+      --primary-2:#27b8ff;
+      --aqua:#1cd2d0;
+      --success:#27c46b;
+      --radius:20px;
+      --shadow-xl:0 30px 80px rgba(0,0,0,.45);
+      --shadow-lg:0 20px 50px rgba(0,0,0,.35);
+      --max:1260px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(900px 520px at 88% -10%, rgba(47,120,255,.34), transparent 60%),
+        radial-gradient(700px 400px at -10% 20%, rgba(28,210,208,.2), transparent 65%),
+        linear-gradient(180deg,#090f1d 0%,#060a14 100%);
+      min-height:100vh;
+      overflow-x:hidden;
+    }
+
+    .grain::before{
+      content:"";
+      position:fixed;inset:0;pointer-events:none;opacity:.055;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='%23fff'%3E%3Ccircle cx='12' cy='10' r='1'/%3E%3Ccircle cx='96' cy='64' r='1'/%3E%3Ccircle cx='170' cy='30' r='1'/%3E%3Ccircle cx='38' cy='150' r='1'/%3E%3Ccircle cx='130' cy='138' r='1'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .wrap{max-width:var(--max);margin:0 auto;padding:24px 20px 62px}
+
+    .topbar{
+      position:sticky;top:12px;z-index:50;
+      display:flex;align-items:center;justify-content:space-between;gap:14px;
+      padding:12px 14px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.07);
+      background:linear-gradient(180deg,rgba(9,15,29,.85),rgba(9,15,29,.58));
+      backdrop-filter:blur(12px);
+      box-shadow:0 14px 32px rgba(0,0,0,.35);
+    }
+
+    .brand{display:flex;align-items:center;gap:11px}
+    .logo{
+      width:38px;height:38px;border-radius:12px;display:grid;place-items:center;
+      background:linear-gradient(155deg,var(--primary),#64aeff 55%,var(--aqua));
+      box-shadow:0 12px 30px rgba(47,120,255,.4);
+      overflow:hidden;
+      padding:3px;
+    }
+    .logo img{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      border-radius:9px;
+      display:block;
+    }
+    .brand h1{margin:0;font-size:18px;letter-spacing:.2px}
+    .brand p{margin:2px 0 0;color:var(--muted);font-size:12px}
+
+    .actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      border-radius:13px;padding:12px 17px;font-weight:700;
+      border:0;cursor:pointer;text-decoration:none;
+      transition:transform .2s ease,filter .2s ease,box-shadow .2s ease;
+      white-space:nowrap;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn:active{transform:translateY(0)}
+    .btn-primary{
+      color:#fff;
+      background:linear-gradient(140deg,var(--primary),#5ca7ff 42%,var(--aqua));
+      box-shadow:0 14px 30px rgba(47,120,255,.38);
+    }
+    .btn-primary:hover{filter:brightness(1.07)}
+    .btn-ghost{
+      color:#d9e7ff;background:#112243;border:1px solid #2a4b84;
+    }
+
+    .hero{
+      margin-top:18px;
+      display:grid;grid-template-columns:1.2fr .8fr;gap:16px;
+    }
+    .card{
+      border-radius:var(--radius);
+      border:1px solid rgba(146,173,224,.2);
+      background:linear-gradient(180deg,rgba(14,23,42,.96),rgba(10,18,34,.96));
+      box-shadow:var(--shadow-lg);
+      overflow:hidden;
+    }
+    .card-inner{padding:30px}
+
+    .hero h2{
+      margin:0 0 12px;
+      font-size:clamp(34px,5vw,58px);
+      line-height:1.02;
+      letter-spacing:-.035em;
+    }
+    .grad{
+      background:linear-gradient(130deg,#fff 10%,#bfd7ff 48%,#9ff4ff 100%);
+      -webkit-background-clip:text;background-clip:text;color:transparent;
+    }
+    .lead{
+      margin:0;
+      font-size:17px;
+      line-height:1.68;
+      color:#c8d8f8;
+      max-width:63ch;
+    }
+
+    .hero-ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+    .hint{margin-top:12px;color:#98abd2;font-size:13px}
+
+    .status-top{
+      display:flex;align-items:center;gap:8px;
+      padding:10px 12px;border-radius:12px;
+      background:#0e1d38;border:1px solid #2e4f89;
+      color:#d7e6ff;font-weight:600;font-size:14px;
+    }
+    .live-dot{
+      width:9px;height:9px;border-radius:50%;
+      background:var(--success);
+      box-shadow:0 0 0 8px rgba(39,196,107,.13);
+      animation:pulse 2s ease infinite;
+    }
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.22)}}
+
+    .facts{margin-top:12px;display:grid;gap:10px}
+    .fact{
+      display:flex;justify-content:space-between;gap:10px;
+      padding:11px 12px;border-radius:12px;
+      background:#0e1a33;border:1px solid #2a426f;
+      color:#cedfff;font-size:14px;
+    }
+    .fact b{color:#fff}
+
+    .section-title{
+      margin:24px 0 12px;
+      font-size:26px;
+      letter-spacing:-.02em;
+    }
+
+    .benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .benefit{
+      padding:18px;
+      border-radius:16px;
+      background:linear-gradient(180deg,#101d38,#0d1830);
+      border:1px solid rgba(146,173,224,.18);
+      transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;
+    }
+    .benefit:hover{
+      transform:translateY(-3px);
+      border-color:#4f76b8;
+      box-shadow:0 16px 36px rgba(0,0,0,.34);
+    }
+    .benefit h3{margin:0 0 8px;font-size:17px}
+    .benefit p{margin:0;color:var(--muted);line-height:1.6;font-size:14px}
+
+    .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .review{
+      padding:18px;
+      border-radius:16px;
+      border:1px solid rgba(146,173,224,.18);
+      background:linear-gradient(180deg,#101c34,#0c162b);
+      position:relative;
+    }
+    .review:before{
+      content:"“";
+      position:absolute;top:8px;right:12px;
+      font-size:34px;color:#4d74b8;opacity:.35;font-weight:700;
+    }
+    .review p{margin:0 0 10px;line-height:1.64;color:#d9e7ff}
+    .review small{color:#98add5}
+
+    .cta{
+      margin-top:20px;
+      border-radius:20px;
+      border:1px solid rgba(109,166,255,.35);
+      background:linear-gradient(135deg,rgba(47,120,255,.21),rgba(28,210,208,.14));
+      padding:24px;
+      display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+      box-shadow:var(--shadow-xl);
+    }
+    .cta h3{margin:0 0 7px;font-size:26px;letter-spacing:-.02em}
+    .cta p{margin:0;color:#c5d8fa;font-size:15px}
+
+    footer{margin-top:22px;text-align:center;color:#8ea5d0;font-size:13px}
+
+    .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.show{opacity:1;transform:none}
+
+    @media (max-width:1020px){
+      .hero,.benefits,.reviews{grid-template-columns:1fr}
+      .card-inner{padding:22px}
+      .topbar{position:static}
+    }
+  </style>
+</head>
+<body class="grain">
+  <div class="wrap">
+    <header class="topbar reveal">
+      <div class="brand">
+        <div class="logo"><img src="./icons/icon-128.png" alt="Voice PRO AI logo" /></div>
+        <div>
+          <h1>Voice PRO AI</h1>
+          <p>Премиальная диктовка и транскрибация для Windows</p>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-ghost" href="#reviews">Отзывы</a>
+        <a class="btn btn-primary" href="https://github.com/dencikpapinka-png/ai-voice-pro-ai/releases/latest/download/Voice_PRO_AI_Setup.exe">Скачать для Windows</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <article class="card reveal">
+        <div class="card-inner">
+          <h2 class="grad">Голосом быстрее.<br>Точнее. Увереннее.</h2>
+          <p class="lead">
+            Voice PRO AI создан как профессиональный desktop-сервис для тех, кто ценит скорость и качество текста.
+            Диктуйте идеи, сообщения, заметки и рабочие документы — без лишней рутины и с максимальным комфортом.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="https://github.com/dencikpapinka-png/ai-voice-pro-ai/releases/latest/download/Voice_PRO_AI_Setup.exe">Скачать установщик</a>
+            <a class="btn btn-ghost" href="#benefits">Посмотреть преимущества</a>
+          </div>
+          <div class="hint">Установка занимает 1-2 минуты. Интерфейс полностью на русском языке.</div>
+        </div>
+      </article>
+
+      <aside class="card reveal">
+        <div class="card-inner">
+          <div class="status-top"><span class="live-dot"></span>Сервис готов к работе</div>
+          <div class="facts">
+            <div class="fact"><span>Платформа</span><b>Windows</b></div>
+            <div class="fact"><span>Сценарии</span><b>Работа, учеба, контент</b></div>
+            <div class="fact"><span>Формат</span><b>Desktop приложение</b></div>
+            <div class="fact"><span>Обновления</span><b>Регулярно</b></div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <h3 id="benefits" class="section-title reveal">Почему выбирают Voice PRO AI</h3>
+    <section class="benefits">
+      <article class="benefit reveal"><h3>Экономит время каждый день</h3><p>Сокращает рутинный набор текста и ускоряет рабочие процессы в переписке, документах и задачах.</p></article>
+      <article class="benefit reveal"><h3>Премиальный пользовательский опыт</h3><p>Чистый интерфейс, продуманная логика и стабильная работа в формате полноценного desktop-приложения.</p></article>
+      <article class="benefit reveal"><h3>Развитие продукта</h3><p>Приложение регулярно обновляется: исправления, новые функции и улучшение производительности.</p></article>
+    </section>
+
+    <h3 id="reviews" class="section-title reveal">Отзывы</h3>
+    <section class="reviews">
+      <article class="review reveal">
+        <p>«Сервис очень сильно ускорил работу. Особенно удобно для длинных сообщений и заметок по задачам.»</p>
+        <small>Алексей, руководитель проектов</small>
+      </article>
+      <article class="review reveal">
+        <p>«Нравится ощущение качества: интерфейс аккуратный, всё понятно и работает стабильно.»</p>
+        <small>Екатерина, маркетинг</small>
+      </article>
+      <article class="review reveal">
+        <p>«Установил и сразу начал пользоваться. Для ежедневной работы — очень практичный инструмент.»</p>
+        <small>Илья, поддержка клиентов</small>
+      </article>
+    </section>
+
+    <section class="cta reveal">
+      <div>
+        <h3>Готовы попробовать Voice PRO AI?</h3>
+        <p>Скачайте приложение и начните работать с голосом как с полноценным инструментом продуктивности.</p>
+      </div>
+      <a class="btn btn-primary" href="https://github.com/dencikpapinka-png/ai-voice-pro-ai/releases/latest/download/Voice_PRO_AI_Setup.exe">Скачать</a>
+    </section>
+
+    <footer class="reveal">© <span id="year"></span> Voice PRO AI</footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('show'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
