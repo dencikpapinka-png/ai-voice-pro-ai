@@ -99,10 +99,12 @@
 }
 
 .hero-title {
-  font-size: clamp(42px, 6.2vw, 74px);
-  letter-spacing: -0.04em;
-  line-height: 0.97;
-  font-weight: 760;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(38px, 5.4vw, 64px);
+  letter-spacing: -0.028em;
+  line-height: 1.03;
+  font-weight: 700;
+  max-width: 19ch;
 }
 
 .gradient-text {
