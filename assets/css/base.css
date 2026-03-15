@@ -93,10 +93,11 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: "Manrope", "Inter", system-ui, sans-serif;
-  font-weight: 750;
-  line-height: 1.12;
-  letter-spacing: -0.028em;
+  font-family: "Sora", "Inter", system-ui, sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.022em;
+  text-wrap: balance;
 }
 
 p {

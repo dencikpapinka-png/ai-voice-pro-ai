@@ -94,11 +94,11 @@
 
 @media (max-width: 540px) {
   .brand-text h1 {
-    font-size: 26px;
+    font-size: 22px;
   }
 
   .brand-subtitle {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .btn {

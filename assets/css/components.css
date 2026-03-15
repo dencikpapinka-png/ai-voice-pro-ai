@@ -14,9 +14,9 @@
 .nav-link {
   color: #c7d8f5;
   border-radius: 10px;
-  padding: 9px 12px;
-  font-size: 14px;
-  font-weight: 560;
+  padding: 8px 11px;
+  font-size: 13px;
+  font-weight: 540;
   border: 1px solid transparent;
   transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
 }
@@ -49,7 +49,7 @@
   gap: 8px;
   border: 1px solid transparent;
   border-radius: 14px;
-  padding: 13px 20px;
+  padding: 11px 18px;
   font-weight: 650;
   letter-spacing: 0.01em;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), filter var(--transition-fast);
@@ -99,10 +99,10 @@
 }
 
 .hero-title {
-  font-size: clamp(46px, 7.4vw, 86px);
-  letter-spacing: -0.048em;
-  line-height: 0.93;
-  font-weight: 800;
+  font-size: clamp(42px, 6.2vw, 74px);
+  letter-spacing: -0.04em;
+  line-height: 0.97;
+  font-weight: 760;
 }
 
 .gradient-text {
@@ -115,7 +115,7 @@
 .hero-desc {
   margin-top: 22px;
   color: var(--text-soft);
-  font-size: clamp(18px, 2.1vw, 23px);
+  font-size: clamp(17px, 1.9vw, 21px);
   line-height: 1.64;
   font-weight: 470;
   max-width: 58ch;
@@ -237,10 +237,10 @@
 .feature-card h3,
 .review-card h3,
 .step-card h3 {
-  font-size: clamp(24px, 2.3vw, 31px);
-  letter-spacing: -0.03em;
-  line-height: 1.14;
-  font-weight: 760;
+  font-size: clamp(22px, 2vw, 28px);
+  letter-spacing: -0.022em;
+  line-height: 1.16;
+  font-weight: 700;
 }
 
 .benefit-card p,
@@ -355,8 +355,8 @@
   justify-content: space-between;
   gap: 12px;
   padding: 18px 20px;
-  font-size: clamp(20px, 2.2vw, 24px);
-  font-weight: 760;
+  font-size: clamp(18px, 1.9vw, 21px);
+  font-weight: 680;
   text-align: left;
 }
 
@@ -399,18 +399,19 @@
 }
 
 .cta-panel h3 {
-  font-size: clamp(34px, 4.5vw, 56px);
-  line-height: 1.01;
-  letter-spacing: -0.04em;
-  font-weight: 800;
+  font-size: clamp(30px, 3.8vw, 44px);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+  max-width: 16ch;
 }
 
 .cta-panel p {
   margin-top: 14px;
   color: var(--text-soft);
   max-width: 50ch;
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.72;
 }
 
 .toast-wrap {
