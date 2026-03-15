@@ -99,9 +99,9 @@
 }
 
 .hero-title {
-  font-size: clamp(42px, 7vw, 78px);
+  font-size: clamp(46px, 7.4vw, 86px);
   letter-spacing: -0.048em;
-  line-height: 0.96;
+  line-height: 0.93;
   font-weight: 800;
 }
 
@@ -115,10 +115,10 @@
 .hero-desc {
   margin-top: 22px;
   color: var(--text-soft);
-  font-size: clamp(18px, 2.2vw, 25px);
+  font-size: clamp(18px, 2.1vw, 23px);
   line-height: 1.64;
   font-weight: 470;
-  max-width: 62ch;
+  max-width: 58ch;
 }
 
 .hero-actions {
@@ -250,7 +250,7 @@
   margin-top: 12px;
   color: var(--text-soft);
   line-height: 1.72;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .feature-checks {
@@ -355,8 +355,8 @@
   justify-content: space-between;
   gap: 12px;
   padding: 18px 20px;
-  font-size: 20px;
-  font-weight: 670;
+  font-size: clamp(20px, 2.2vw, 24px);
+  font-weight: 760;
   text-align: left;
 }
 
@@ -376,7 +376,7 @@
   padding: 0 20px 18px;
   color: var(--text-soft);
   line-height: 1.76;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .review-meta {
@@ -438,3 +438,4 @@
   border-color: rgba(255, 111, 145, 0.45);
   color: #ffd3de;
 }
+

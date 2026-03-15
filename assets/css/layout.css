@@ -137,8 +137,8 @@
 .section-description {
   margin-top: 16px;
   color: var(--text-soft);
-  font-size: clamp(17px, 2vw, 22px);
-  line-height: 1.68;
+  font-size: clamp(16px, 1.8vw, 20px);
+  line-height: 1.72;
   font-weight: 470;
 }
 
@@ -204,3 +204,4 @@
     radial-gradient(620px 240px at 86% 20%, rgba(45, 143, 255, 0.2), transparent 62%);
   filter: blur(8px);
 }
+
