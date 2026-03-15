@@ -15,11 +15,13 @@
   <meta property="og:title" content="Voice PRO AI — Умная диктовка и транскрибация для Windows" />
   <meta property="og:description" content="Голосовой ввод текста, локальное распознавание, транскрибация аудио/видео и автоматизация работы с текстом." />
   <meta property="og:url" content="https://voiceproai.ru/" />
-  <meta property="og:image" content="https://voiceproai.ru/icons/icon-128.png" />
+  <meta property="og:image" content="https://voiceproai.ru/assets/img/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Voice PRO AI — Умная диктовка для Windows" />
   <meta name="twitter:description" content="Премиальная диктовка, транскрибация и обработка текста для повседневной работы." />
-  <meta name="twitter:image" content="https://voiceproai.ru/icons/icon-128.png" />
+  <meta name="twitter:image" content="https://voiceproai.ru/assets/img/og-cover.png" />
   <link rel="canonical" href="https://voiceproai.ru/" />
   <link rel="alternate" hreflang="ru-RU" href="https://voiceproai.ru/" />
   <link rel="alternate" hreflang="x-default" href="https://voiceproai.ru/" />
@@ -42,6 +44,60 @@
         "priceCurrency": "USD"
       },
       "description": "Voice PRO AI — приложение для голосового ввода, транскрибации и обработки текста на Windows."
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Voice PRO AI",
+      "url": "https://voiceproai.ru/",
+      "inLanguage": "ru-RU",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://voiceproai.ru/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Нужен ли интернет для работы?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для локальных движков интернет не требуется после загрузки модели. API-режим, наоборот, работает через сеть."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Работает ли вставка текста в любых программах?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, в большинстве Windows-приложений с обычным полем ввода. Для отдельных системных окон могут быть ограничения ОС."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли работать с длинными аудио и видео?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. В разделе «Транскрибация аудио и видео» есть очередь файлов с поочерёдной обработкой и экспортом результата."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как обновляется приложение?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В приложении встроена проверка обновлений. Новые версии загружаются через официальный релизный канал GitHub Releases."
+          }
+        }
+      ]
     }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -83,6 +139,8 @@
         <a class="nav-link" href="#features">Возможности</a>
         <a class="nav-link" href="#how">Как работает</a>
         <a class="nav-link" href="#compare">Сравнение</a>
+        <a class="nav-link" href="./vozmozhnosti.html">Возможности+</a>
+        <a class="nav-link" href="./podderzhka.html">Контакты</a>
         <a class="nav-link" href="#resources">Материалы</a>
         <a class="nav-link" href="#faq">FAQ</a>
         <a class="btn btn-primary" data-download-link href="https://github.com/dencikpapinka-png/ai-voice-pro-ai/releases/latest/download/Voice_PRO_AI_Setup.exe">Скачать для Windows</a>
@@ -334,6 +392,14 @@
         <article class="resource-card reveal">
           <h3><a href="./guides/sravnenie-lokalno-i-api.html">Локально или API: что выбрать</a></h3>
           <p>Сравнение по скорости, качеству, стоимости и стабильности для разных рабочих сценариев.</p>
+        </article>
+        <article class="resource-card reveal">
+          <h3><a href="./vozmozhnosti.html">Возможности Voice PRO AI</a></h3>
+          <p>Отдельная страница с детальным обзором модулей продукта и рекомендованными сценариями использования.</p>
+        </article>
+        <article class="resource-card reveal">
+          <h3><a href="./podderzhka.html">Контакты и поддержка</a></h3>
+          <p>Каналы связи, FAQ по внедрению и быстрые способы получить помощь по настройке приложения.</p>
         </article>
       </div>
     </section>

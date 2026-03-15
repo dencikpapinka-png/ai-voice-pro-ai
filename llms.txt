@@ -14,6 +14,8 @@
 - https://voiceproai.ru/guides/lokalnoe-raspoznavanie-rechi.html
 - https://voiceproai.ru/guides/goryachie-klavishi-diktovka.html
 - https://voiceproai.ru/guides/sravnenie-lokalno-i-api.html
+- https://voiceproai.ru/vozmozhnosti.html
+- https://voiceproai.ru/podderzhka.html
 
 ## Support
 - https://t.me/Dima_Kanev
