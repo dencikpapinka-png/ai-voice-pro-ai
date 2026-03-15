@@ -328,6 +328,36 @@
   border-bottom: 0;
 }
 
+.compare-value {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mark-good,
+.mark-bad {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.mark-good {
+  color: #9effdd;
+  border: 1px solid rgba(140, 244, 214, 0.45);
+  background: rgba(53, 214, 167, 0.18);
+}
+
+.mark-bad {
+  color: #ffc0cf;
+  border: 1px solid rgba(255, 154, 178, 0.45);
+  background: rgba(255, 111, 145, 0.14);
+}
+
 .good {
   color: #8cf4d6;
   font-weight: 700;
