@@ -31,8 +31,13 @@
   width: 36px;
   height: 36px;
   border-radius: 10px;
-  background: linear-gradient(145deg, rgba(53, 214, 167, 0.96), rgba(45, 143, 255, 0.96));
-  box-shadow: 0 12px 28px rgba(53, 214, 167, 0.34);
+  border: 1px solid rgba(115, 200, 255, 0.45);
+  background:
+    radial-gradient(circle at 30% 28%, rgba(126, 233, 255, 0.32), transparent 58%),
+    linear-gradient(145deg, rgba(15, 28, 55, 0.98), rgba(10, 20, 40, 0.98));
+  box-shadow:
+    0 10px 22px rgba(19, 40, 84, 0.5),
+    inset 0 0 0 1px rgba(120, 208, 255, 0.18);
   display: grid;
   place-items: center;
   padding: 4px;
@@ -43,6 +48,7 @@
   height: 100%;
   object-fit: contain;
   border-radius: 10px;
+  filter: saturate(1.28) brightness(1.18) contrast(1.12) drop-shadow(0 0 4px rgba(96, 196, 255, 0.55));
 }
 
 .brand-text {
