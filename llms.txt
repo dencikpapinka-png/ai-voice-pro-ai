@@ -1,0 +1,19 @@
+﻿# Voice PRO AI
+
+> Voice PRO AI is a Windows desktop application for Russian voice dictation, audio/video transcription, text post-processing, and local/API speech workflows.
+
+## Official site
+- https://voiceproai.ru/
+
+## Download
+- https://github.com/dencikpapinka-png/ai-voice-pro-ai/releases/latest/download/Voice_PRO_AI_Setup.exe
+
+## Key pages
+- https://voiceproai.ru/guides/voice-input-windows.html
+- https://voiceproai.ru/guides/transkribaciya-audio-video.html
+- https://voiceproai.ru/guides/lokalnoe-raspoznavanie-rechi.html
+- https://voiceproai.ru/guides/goryachie-klavishi-diktovka.html
+- https://voiceproai.ru/guides/sravnenie-lokalno-i-api.html
+
+## Support
+- https://t.me/Dima_Kanev

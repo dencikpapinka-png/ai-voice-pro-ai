@@ -180,6 +180,12 @@
   gap: var(--space-4);
 }
 
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
 .compare-wrap,
 .faq-wrap,
 .cta-wrap {

@@ -200,7 +200,8 @@
 
 .benefit-card,
 .feature-card,
-.review-card {
+.review-card,
+.resource-card {
   border-radius: var(--radius-lg);
   border: 1px solid var(--surface-border);
   background: linear-gradient(180deg, rgba(17, 25, 44, 0.92), rgba(12, 19, 33, 0.92));
@@ -210,7 +211,8 @@
 
 .benefit-card:hover,
 .feature-card:hover,
-.review-card:hover {
+.review-card:hover,
+.resource-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
   border-color: var(--surface-border-strong);
@@ -236,6 +238,7 @@
 .benefit-card h3,
 .feature-card h3,
 .review-card h3,
+.resource-card h3,
 .step-card h3 {
   font-size: clamp(22px, 2vw, 28px);
   letter-spacing: -0.022em;
@@ -246,6 +249,7 @@
 .benefit-card p,
 .feature-card p,
 .review-card p,
+.resource-card p,
 .step-card p {
   margin-top: 12px;
   color: var(--text-soft);
@@ -384,6 +388,15 @@
   color: var(--text-muted);
   font-size: 14px;
   font-weight: 520;
+}
+
+.resource-card a {
+  color: #f4f8ff;
+  text-decoration: none;
+}
+
+.resource-card a:hover {
+  color: #aef0da;
 }
 
 .cta-panel {

@@ -1,4 +1,14 @@
 ﻿User-agent: *
 Allow: /
 
+# AI crawlers
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+
 Sitemap: https://voiceproai.ru/sitemap.xml
