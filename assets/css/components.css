@@ -211,6 +211,7 @@
 
 .benefit-card,
 .feature-card,
+.gaming-card,
 .review-card,
 .resource-card {
   border-radius: var(--radius-lg);
@@ -222,6 +223,7 @@
 
 .benefit-card:hover,
 .feature-card:hover,
+.gaming-card:hover,
 .review-card:hover,
 .resource-card:hover {
   transform: translateY(-4px);
@@ -248,6 +250,7 @@
 
 .benefit-card h3,
 .feature-card h3,
+.gaming-card h3,
 .review-card h3,
 .resource-card h3,
 .step-card h3 {
@@ -259,6 +262,7 @@
 
 .benefit-card p,
 .feature-card p,
+.gaming-card p,
 .review-card p,
 .resource-card p,
 .step-card p {
@@ -289,6 +293,29 @@
   height: 7px;
   border-radius: 999px;
   background: var(--accent);
+}
+
+.gaming-cta {
+  margin-top: var(--space-4);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(53, 214, 167, 0.32);
+  background:
+    linear-gradient(180deg, rgba(14, 29, 41, 0.88), rgba(12, 24, 36, 0.88)),
+    radial-gradient(circle at 18% 22%, rgba(53, 214, 167, 0.14), transparent 44%);
+  box-shadow: var(--shadow-md);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.gaming-cta p {
+  color: var(--text-soft);
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 500;
 }
 
 .step-card {

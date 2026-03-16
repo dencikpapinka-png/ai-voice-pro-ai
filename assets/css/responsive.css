@@ -5,6 +5,7 @@
 
   .steps-grid,
   .benefits-grid,
+  .gaming-grid,
   .reviews-grid,
   .resources-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -75,6 +76,7 @@
   .features-grid,
   .steps-grid,
   .benefits-grid,
+  .gaming-grid,
   .reviews-grid,
   .resources-grid {
     grid-template-columns: 1fr;
@@ -99,6 +101,10 @@
 
   .cta-panel h3 {
     font-size: clamp(28px, 9vw, 46px);
+  }
+
+  .gaming-cta {
+    padding: 18px 16px;
   }
 
   .site-footer {
