@@ -516,6 +516,31 @@
   line-height: 1.72;
 }
 
+.download-security-note {
+  margin-top: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 62ch;
+  border-radius: 12px;
+  border: 1px solid rgba(96, 214, 255, 0.28);
+  background:
+    linear-gradient(180deg, rgba(12, 33, 51, 0.7), rgba(11, 25, 43, 0.72)),
+    radial-gradient(circle at 10% 18%, rgba(53, 214, 167, 0.08), transparent 45%);
+  color: #cfe4ff;
+  padding: 11px 12px;
+  font-size: 14px;
+  line-height: 1.56;
+}
+
+.download-security-note svg {
+  width: 18px;
+  height: 18px;
+  color: #8eead1;
+  flex: 0 0 auto;
+  margin-top: 1px;
+}
+
 .toast-wrap {
   position: fixed;
   right: 20px;
