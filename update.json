@@ -1,0 +1,9 @@
+﻿{
+    "stable":  {
+                   "installer_url":  "https://github.com/dencikpapinka-png/ai-voice-pro-ai/releases/download/v1.1.16/Voice_PRO_AI_Setup.exe",
+                   "sha256":  "74a7d4ff59f49595f44b486e5d6c3543cd4fbdf2ce42166f3b0102bef15a6e35",
+                   "version":  "1.1.16",
+                   "release_notes":  "Обновление Voice PRO AI 1.1.16",
+                   "published_at":  "2026-03-15T20:27:10Z"
+               }
+}

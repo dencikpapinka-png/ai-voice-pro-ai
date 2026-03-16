@@ -99,6 +99,11 @@
     padding: 28px 22px;
   }
 
+  .release-proof-row {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
   .cta-panel h3 {
     font-size: clamp(28px, 9vw, 46px);
   }

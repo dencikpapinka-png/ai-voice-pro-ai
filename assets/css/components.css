@@ -318,6 +318,45 @@
   font-weight: 500;
 }
 
+.release-proof {
+  margin-top: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(124, 151, 205, 0.24);
+  background: rgba(9, 16, 30, 0.58);
+  padding: 11px 12px;
+  display: grid;
+  gap: 6px;
+}
+
+.release-proof-row {
+  display: grid;
+  grid-template-columns: 138px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 8px;
+}
+
+.release-proof-label {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.release-proof-value {
+  color: #d9e7ff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.release-proof-hash {
+  color: #9fead8;
+  font-size: 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .step-card {
   border-radius: var(--radius-lg);
   border: 1px solid var(--surface-border);
