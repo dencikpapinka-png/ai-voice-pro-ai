@@ -197,20 +197,106 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--space-4);
-  padding: var(--space-5);
+  align-items: center;
+  padding: 18px 22px;
+  border-color: rgba(124, 151, 205, 0.24);
+  background:
+    linear-gradient(180deg, rgba(16, 25, 43, 0.92), rgba(13, 20, 34, 0.9)),
+    radial-gradient(circle at 12% 18%, rgba(53, 214, 167, 0.11), transparent 48%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.03),
+    0 18px 42px rgba(0, 0, 0, 0.28);
+}
+
+.footer-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-mark {
+  width: 28px;
+  height: 28px;
+  border-radius: 9px;
+  border: 1px solid rgba(115, 200, 255, 0.45);
+  background:
+    radial-gradient(circle at 34% 30%, rgba(126, 233, 255, 0.3), transparent 56%),
+    linear-gradient(145deg, rgba(16, 32, 58, 0.98), rgba(10, 21, 40, 0.98));
+  box-shadow:
+    inset 0 0 0 1px rgba(120, 208, 255, 0.18),
+    0 8px 18px rgba(14, 31, 61, 0.42);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.footer-mark img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: saturate(1.12) brightness(1.08);
 }
 
 .footer-note {
   color: var(--text-muted);
   font-size: 14px;
+  line-height: 1.5;
+  margin-top: 7px;
 }
 
 .footer-links {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
   flex-wrap: wrap;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 40px;
+  border-radius: 11px;
+  padding: 8px 14px;
+  color: #d6e4ff;
+  font-size: 14px;
+  font-weight: 580;
+  border: 1px solid rgba(124, 151, 205, 0.24);
+  background: rgba(12, 21, 37, 0.78);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.footer-link:hover {
+  transform: translateY(-1px);
+  color: #f5fbff;
+  border-color: rgba(96, 214, 255, 0.44);
+  background: rgba(16, 31, 52, 0.9);
+  box-shadow: 0 9px 22px rgba(0, 0, 0, 0.24);
+}
+
+.footer-link:focus-visible {
+  outline: 2px solid rgba(87, 216, 255, 0.82);
+  outline-offset: 2px;
+}
+
+.footer-link-telegram {
+  color: #a7eaff;
+  border-color: rgba(82, 176, 255, 0.38);
+  background: linear-gradient(135deg, rgba(20, 66, 106, 0.86), rgba(14, 38, 66, 0.92));
+}
+
+.footer-link-telegram svg {
+  width: 16px;
+  height: 16px;
+  color: currentColor;
+}
+
+.footer-link-telegram:hover {
+  color: #d8f4ff;
+  border-color: rgba(110, 198, 255, 0.58);
+  background: linear-gradient(135deg, rgba(26, 83, 132, 0.9), rgba(17, 48, 82, 0.94));
 }
 
 .ambient-layer {

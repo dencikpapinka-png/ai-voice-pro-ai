@@ -17,6 +17,7 @@
 
   .site-footer {
     grid-template-columns: 1fr;
+    padding: 16px 18px;
   }
 
   .footer-links {
@@ -98,6 +99,18 @@
 
   .cta-panel h3 {
     font-size: clamp(28px, 9vw, 46px);
+  }
+
+  .site-footer {
+    gap: 14px;
+  }
+
+  .footer-links {
+    width: 100%;
+  }
+
+  .footer-link {
+    flex: 1 1 170px;
   }
 }
 
