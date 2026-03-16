@@ -16,6 +16,7 @@
   <meta property="og:description" content="ИИ-голосовой ввод текста, локальное распознавание, транскрибация аудио/видео и интеллектуальная автоматизация работы с текстом." />
   <meta property="og:url" content="https://voiceproai.ru/" />
   <meta property="og:image" content="https://voiceproai.ru/assets/img/og-cover.png" />
+  <meta property="og:image:url" content="https://voiceproai.ru/assets/img/og-cover.png" />
   <meta property="og:image:secure_url" content="https://voiceproai.ru/assets/img/og-cover.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
@@ -36,6 +37,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="https://voiceproai.ru/icons/icon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="https://voiceproai.ru/icons/icon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="https://voiceproai.ru/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="https://voiceproai.ru/manifest.json" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -74,8 +76,38 @@
       "@type": "Organization",
       "name": "Voice PRO AI",
       "url": "https://voiceproai.ru/",
-      "logo": "https://voiceproai.ru/icons/icon-128.png",
-      "image": "https://voiceproai.ru/assets/img/og-cover.png"
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://voiceproai.ru/icons/icon-128.png",
+        "width": 128,
+        "height": 128
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://voiceproai.ru/assets/img/og-cover.png",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Voice PRO AI — AI-диктовка и транскрибация для Windows",
+      "url": "https://voiceproai.ru/",
+      "inLanguage": "ru-RU",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Voice PRO AI",
+        "url": "https://voiceproai.ru/"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://voiceproai.ru/assets/img/og-cover.png",
+        "width": 1200,
+        "height": 630
+      }
     }
   </script>
   <script type="application/ld+json">
